@@ -1,0 +1,20 @@
+.search-bar{
+    /* width: 100%;
+    background-color: beige;
+    height: 25px;
+    margin: 15px    ; */
+
+
+
+    width:65rem;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.search-btn{
+    color: grey;
+    height: 40px;
+    width: 10rem;
+    margin-left: 10px; }
