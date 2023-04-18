@@ -1,13 +1,19 @@
-import "./App.css";
-import Admins from "./components/Admins/Admins";
-import SearchBar from "./components/search/Search";
+import React from "react"
+
+
+import DashBoard from "./Components/DashBoard/DashBoard";
+
+
+
+
+
 function App() {
-  return <div className="App">
-   <SearchBar/>
-    
-    <Admins/>
-    <SearchBar/>
-  </div>;
+  return (
+ <div>
+<DashBoard/>
+
+ </div>
+  );
 }
 
 export default App;
