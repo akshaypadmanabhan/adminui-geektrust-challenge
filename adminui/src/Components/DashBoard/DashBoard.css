@@ -1,15 +1,4 @@
-.search-bar {
-  /* width:1000px; */
 
-  margin-left: 170px;
-  margin-right: 40px;
-  width: 1000px;
-  
-
-  height: 30px;
-  border-radius: 5px;
-  border-style: hidden;
-}
 .headings {
   background-color: red;
   height: 30px;
@@ -33,7 +22,7 @@
   width: 28%;
   border: 1px solid grey;
 }
-.deleteselected--btn {
+.deletemultiple__btn {
   width: 100px;
   height: 50px;
   justify-content: center;

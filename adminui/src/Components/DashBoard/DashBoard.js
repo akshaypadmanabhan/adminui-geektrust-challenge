@@ -3,11 +3,15 @@ import ReactPaginate from "react-paginate";
 import axios from "axios";
 
 import "./DashBoard.css";
+
+// UI Components
 import CheckBox from "../UI/CheckBox";
-// import Pagination from "../Pagination/Pagination";
 import DeleteBtn from "../UI/DeleteBtn";
 import EditBtn from "../UI/EditBtn";
 import DoneBtn from "../UI/DoneBtn";
+
+// Search
+
 import SearchBar from "../SearcBar.js/SearchBar";
 
 function DashBoard() {
@@ -109,7 +113,7 @@ function DashBoard() {
 
   const deleteMultiple = () => {
     let tempUsers = users.filter((user) => {
-      console.log(user);
+      // console.log(user);
       let temp = user.isChecked;
       return !temp ? user : "";
     });
@@ -215,18 +219,16 @@ function DashBoard() {
 
       {/* Pagination Component */}
 
-      <span>
-        <button className="deleteselected--btn" onClick={deleteMultiple}>
-          Delete Selected Users
-        </button>
-      </span>
+      <button className="deletemultiple__btn" onClick={deleteMultiple}>
+        Delete Selected Users
+      </button>
+
       <ReactPaginate
         className="pagination"
         previousLabel={"Prev"}
         nextLabel={"Next"}
         pageCount={totalPages}
         onPageChange={pageChange}
-        
       />
     </div>
   );
